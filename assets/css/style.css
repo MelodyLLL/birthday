@@ -1,186 +1,201 @@
 * {
-    outline: none !important;
-    border: none !important;
-    overflow: hidden !important;
+	outline: none !important;
+	border: none !important;
+	overflow: hidden !important;
 }
 
 .bodi {
-    height: 100vh;
-    background: linear-gradient(to bottom, #00004d, #110055, #330066, #661133, #ff9933);
-    /* 其他样式保持不变 */
+	height: 100vh;
+	background: linear-gradient(
+		to bottom,
+		#00004d,
+		#110055,
+		#330066,
+		#661133,
+		#ff9933
+	);
+	/* 其他样式保持不变 */
 }
 
 .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: rgba(0, 0, 0, 0.4) !important;
-    background-clip: border-box;
-    border: 0px solid rgba(0, 0, 0, 0) !important;
-    border-radius: 10px !important;
-    z-index: 10; /* Ensure the card is above the canvas */
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: rgba(0, 0, 0, 0.4) !important;
+	background-clip: border-box;
+	border: 0px solid rgba(0, 0, 0, 0) !important;
+	border-radius: 10px !important;
+	z-index: 10; /* Ensure the card is above the canvas */
 }
 
 .judul {
-    font-family: 'Concert One', cursive;
-    color: #D3F3EE;
+	font-family: 'Concert One', cursive;
+	color: #d3f3ee;
 }
 
 .subjudul {
-    font-family: 'Concert One';
-    color: #3bacbb;
+	font-family: 'Concert One';
+	color: #3bacbb;
 }
 
 .tombol {
-    background: #3bacbb;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    color: #D3F3EE;
-    padding: 10px;
-    font-weight: bold;
-    z-index: 20; /* Ensure the button is above the canvas */
+	background: #3bacbb;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	color: #d3f3ee;
+	padding: 10px;
+	font-weight: bold;
+	z-index: 20; /* Ensure the button is above the canvas */
 }
 
 .tombol:hover {
-    cursor: pointer;
-    background: #D3F3EE;
-    color: #3bacbb;
+	cursor: pointer;
+	background: #d3f3ee;
+	color: #3bacbb;
 }
 
 .modal-content {
-    background-color: rgba(0, 0, 0, 0.8) !important;
-    z-index: 30; /* Ensure the modal content is above the canvas */
+	background-color: rgba(0, 0, 0, 0.8) !important;
+	z-index: 30; /* Ensure the modal content is above the canvas */
 }
 
 .modal-body {
-    color: #3bacbb !important;
+	color: #3bacbb !important;
 }
 
-.modal-backdrop{
-    z-index: 0 !important;
+.modal-backdrop {
+	z-index: 0 !important;
 }
 
 .circle {
-    position: absolute;
-    border-radius: 50%;
-    background: white;
-    animation: ripple .9s infinite;
-    box-shadow: 0px 0px 1px 0px #508fb9;
+	position: absolute;
+	border-radius: 50%;
+	background: white;
+	animation: ripple 0.9s infinite;
+	box-shadow: 0px 0px 1px 0px #508fb9;
 }
 
 .small {
-    width: 100px;
-    height: 100px;
-    left: -50px;
-    bottom: -50px;
+	width: 100px;
+	height: 100px;
+	left: -50px;
+	bottom: -50px;
 }
 
 .medium {
-    width: 200px;
-    height: 200px;
-    left: -100px;
-    bottom: -100px;
+	width: 200px;
+	height: 200px;
+	left: -100px;
+	bottom: -100px;
 }
 
 .large {
-    width: 400px;
-    height: 400px;
-    left: -200px;
-    bottom: -200px;
+	width: 400px;
+	height: 400px;
+	left: -200px;
+	bottom: -200px;
 }
 
 .xlarge {
-    width: 600px;
-    height: 600px;
-    left: -300px;
-    bottom: -300px;
+	width: 600px;
+	height: 600px;
+	left: -300px;
+	bottom: -300px;
 }
 
 .xxlarge {
-    width: 7000px;
-    height: 7000px;
-    left: -350px;
-    bottom: -350px;
+	width: 7000px;
+	height: 7000px;
+	left: -350px;
+	bottom: -350px;
 }
 
 .shade1 {
-    opacity: 0.2;
+	opacity: 0.2;
 }
 
 .shade2 {
-    opacity: 0.5;
+	opacity: 0.5;
 }
 
 .shade3 {
-    opacity: 0.7;
+	opacity: 0.7;
 }
 
 .shade4 {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 
 .shade5 {
-    opacity: 0.9;
+	opacity: 0.9;
 }
 
 @keyframes ripple {
-    0% {
-        transform: scale(0.8);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(0.8);
-    }
+	0% {
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(0.8);
+	}
 }
 
 #loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 100;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #c6cfd4;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 100;
+	width: 120px;
+	height: 120px;
+	margin: -76px 0 0 -76px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #c6cfd4;
 }
 
 #Kontener {
-    display: none;
+	display: none;
 }
 
 .animate-bottom {
-    position: relative;
-    animation-name: animatebottom;
-    animation-duration: 2s;
+	position: relative;
+	animation-name: animatebottom;
+	animation-duration: 2s;
 }
 
 @keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-    to {
-        bottom: 0;
-        opacity: 1
-    }
+	from {
+		bottom: -100px;
+		opacity: 0;
+	}
+	to {
+		bottom: 0;
+		opacity: 1;
+	}
 }
 
 #tekss {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 #canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Ensure canvas is below other elements */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1; /* Ensure canvas is below other elements */
+}
+
+.carousel-inner {
+	img {
+		width: 300px;
+		height: 400px;
+		object-fit: cover;
+	}
 }
