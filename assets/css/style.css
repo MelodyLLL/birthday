@@ -158,14 +158,14 @@
 	border-top: 16px solid #c6cfd4;
 }
 
-#loaderText{
-  /* position: absolute;
+#loaderText {
+	/* position: absolute;
   left: 50%;
   top: 50%;
   z-index: 100;
   width: 120px;
   height: 120px; */
-  color: #3bacbb;
+	color: #3bacbb;
 }
 
 #Kontener {
@@ -208,4 +208,15 @@
 		height: 400px;
 		object-fit: cover;
 	}
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #c6cfd4;
+  padding: 10px 0;
+  font-size: smaller;
 }

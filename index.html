@@ -28,13 +28,13 @@
 		<div id="loader">
 			<center>
 				<img
-					src="https://i.pinimg.com/originals/a4/f2/cb/a4f2cb80ff2ae2772e80bf30e9d78d4c.gif"
+					src="assets/image/a4f2cb80ff2ae2772e80bf30e9d78d4c.gif"
 					width="80px"
 					height="80px"
 				/>
 			</center>
 
-			<center><span id="loaderText"> 加载中...</span></center>
+			<center><span id="loaderText">稍等哈~</span></center>
 		</div>
 
 		<div class="container" style="display: none; z-index: 1" id="Kontener">
@@ -149,6 +149,7 @@
 								class="close"
 								data-dismiss="modal"
 								aria-label="Close"
+                style="color: #fff;"
 							>
 								<span aria-hidden="true">&times;</span>
 							</button>
@@ -176,7 +177,7 @@
 								data-dismiss="modal"
 								onclick="Mainkannn1();"
 							>
-								看完了, 音乐停！
+								关掉啦！
 							</button>
 						</div>
 					</div>
@@ -187,7 +188,7 @@
 		<div style="position: relative; z-index: 0">
 			<canvas id="canvas">Canvas is not supported in your browser.</canvas>
 		</div>
-
+    <footer class="footer">©️ljq for 🍓 2024-08-27</footer>
 		<!-- <script
 			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -285,7 +286,7 @@
 
 			// 冲击礼花
 			function bomFromSide() {
-				var end = Date.now() + 15 * 1000;
+				var end = Date.now() + 5 * 1000;
 
 				// go Buckeyes!
 				var colors = ['#bb0000', '#ffffff'];
@@ -294,7 +295,7 @@
 				(function frame() {
 					frameCount++;
 					if (frameCount % skipFrames === 0) {
-						var scalar = 5;
+						var scalar = 3;
 						var pineapple = confetti.shapeFromText({ text: '🍓', scalar });
 						var cake = confetti.shapeFromText({ text: '🍰', scalar });
 						// var lanmei = confetti.shapeFromText({ text: '🫐', scalar });
